@@ -1,0 +1,11 @@
+<h1>Residents<h1>
+
+<% @residents.each do |resident| %>
+  <section id="resident-<%= resident.id %>">
+    <ul>
+    <li>Name: <%= resident.name %></li>
+    <li>Age: <%= resident.age %></li>
+    <li>Occupation: <%= resident.occupation %></li>
+    </ul>
+  </section>
+<% end %>
